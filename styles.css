@@ -1,0 +1,79 @@
+/* Ajuste do layout geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Seção dos jogadores */
+#atletico-mg h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilo dos jogadores */
+.jogadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Isso ajusta automaticamente o número de colunas com base no tamanho da tela */
+  gap: 20px;
+  padding: 20px;
+}
+
+.jogador {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jogador img {
+  width: 100%; /* Isso faz a imagem ocupar toda a largura disponível do container */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem distorção */
+}
+
+.jogador p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.votos {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
